@@ -7284,7 +7284,6 @@ declare namespace _ {
      *
      * @param collection The collection to iterate over.
      * @param iteratee The function invoked per iteration.
-     *
      */
     forEach<T>(
       collection: T[],

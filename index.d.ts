@@ -6553,8 +6553,7 @@ declare namespace _ {
      */
     each<T>(
       collection: T[],
-      iteratee?: ListIterator<T, any>,
-      thisArg?: any
+      iteratee?: ListIterator<T, any>
     ): T[];
 
     /**
@@ -6562,8 +6561,7 @@ declare namespace _ {
      */
     each<T>(
       collection: List<T>,
-      iteratee?: ListIterator<T, any>,
-      thisArg?: any
+      iteratee?: ListIterator<T, any>
     ): List<T>;
 
     /**
@@ -6571,8 +6569,7 @@ declare namespace _ {
      */
     each<T>(
       collection: Dictionary<T>,
-      iteratee?: DictionaryIterator<T, any>,
-      thisArg?: any
+      iteratee?: DictionaryIterator<T, any>
     ): Dictionary<T>;
 
     /**
@@ -6580,8 +6577,7 @@ declare namespace _ {
      */
     each<T extends {}>(
       collection: T,
-      iteratee?: ObjectIterator<any, any>,
-      thisArgs?: any
+      iteratee?: ObjectIterator<any, any>
     ): T;
 
     /**
@@ -6589,8 +6585,7 @@ declare namespace _ {
      */
     each<T extends {}, TValue>(
       collection: T,
-      iteratee?: ObjectIterator<TValue, any>,
-      thisArgs?: any
+      iteratee?: ObjectIterator<TValue, any>
     ): T;
   }
 
@@ -6599,8 +6594,7 @@ declare namespace _ {
      * @see _.forEach
      */
     each(
-      iteratee: ListIterator<string, any>,
-      thisArg?: any
+      iteratee: ListIterator<string, any>
     ): LoDashImplicitWrapper<string>;
   }
 
@@ -6609,8 +6603,7 @@ declare namespace _ {
      * @see _.forEach
      */
     each(
-      iteratee: ListIterator<T, any>,
-      thisArg?: any
+      iteratee: ListIterator<T, any>
     ): LoDashImplicitArrayWrapper<T>;
   }
 
@@ -6619,8 +6612,7 @@ declare namespace _ {
      * @see _.forEach
      */
     each<TValue>(
-      iteratee?: ListIterator<TValue, any> | DictionaryIterator<TValue, any>,
-      thisArg?: any
+      iteratee?: ListIterator<TValue, any> | DictionaryIterator<TValue, any>
     ): LoDashImplicitObjectWrapper<T>;
   }
 
@@ -6629,8 +6621,7 @@ declare namespace _ {
      * @see _.forEach
      */
     each(
-      iteratee: ListIterator<string, any>,
-      thisArg?: any
+      iteratee: ListIterator<string, any>
     ): LoDashExplicitWrapper<string>;
   }
 
@@ -6639,8 +6630,7 @@ declare namespace _ {
      * @see _.forEach
      */
     each(
-      iteratee: ListIterator<T, any>,
-      thisArg?: any
+      iteratee: ListIterator<T, any>
     ): LoDashExplicitArrayWrapper<T>;
   }
 
@@ -6649,8 +6639,7 @@ declare namespace _ {
      * @see _.forEach
      */
     each<TValue>(
-      iteratee?: ListIterator<TValue, any> | DictionaryIterator<TValue, any>,
-      thisArg?: any
+      iteratee?: ListIterator<TValue, any> | DictionaryIterator<TValue, any>
     ): LoDashExplicitObjectWrapper<T>;
   }
 
@@ -7295,12 +7284,10 @@ declare namespace _ {
      *
      * @param collection The collection to iterate over.
      * @param iteratee The function invoked per iteration.
-     * @param thisArg The this binding of iteratee.
      */
     forEach<T>(
       collection: T[],
-      iteratee?: ListIterator<T, any>,
-      thisArg?: any
+      iteratee?: ListIterator<T, any>
     ): T[];
 
     /**
@@ -7308,8 +7295,7 @@ declare namespace _ {
      */
     forEach<T>(
       collection: List<T>,
-      iteratee?: ListIterator<T, any>,
-      thisArg?: any
+      iteratee?: ListIterator<T, any>
     ): List<T>;
 
     /**
@@ -7317,8 +7303,7 @@ declare namespace _ {
      */
     forEach<T>(
       collection: Dictionary<T>,
-      iteratee?: DictionaryIterator<T, any>,
-      thisArg?: any
+      iteratee?: DictionaryIterator<T, any>
     ): Dictionary<T>;
 
     /**
@@ -7326,8 +7311,7 @@ declare namespace _ {
      */
     forEach<T extends {}>(
       collection: T,
-      iteratee?: ObjectIterator<any, any>,
-      thisArgs?: any
+      iteratee?: ObjectIterator<any, any>
     ): T;
 
     /**
@@ -7335,8 +7319,7 @@ declare namespace _ {
      */
     forEach<T extends {}, TValue>(
       collection: T,
-      iteratee?: ObjectIterator<TValue, any>,
-      thisArgs?: any
+      iteratee?: ObjectIterator<TValue, any>
     ): T;
   }
 
@@ -7345,8 +7328,7 @@ declare namespace _ {
      * @see _.forEach
      */
     forEach(
-      iteratee: ListIterator<string, any>,
-      thisArg?: any
+      iteratee: ListIterator<string, any>
     ): LoDashImplicitWrapper<string>;
   }
 
@@ -7355,8 +7337,7 @@ declare namespace _ {
      * @see _.forEach
      */
     forEach(
-      iteratee: ListIterator<T, any>,
-      thisArg?: any
+      iteratee: ListIterator<T, any>
     ): LoDashImplicitArrayWrapper<T>;
   }
 
@@ -7365,8 +7346,7 @@ declare namespace _ {
      * @see _.forEach
      */
     forEach<TValue>(
-      iteratee?: ListIterator<TValue, any> | DictionaryIterator<TValue, any>,
-      thisArg?: any
+      iteratee?: ListIterator<TValue, any> | DictionaryIterator<TValue, any>
     ): LoDashImplicitObjectWrapper<T>;
   }
 
@@ -7375,8 +7355,7 @@ declare namespace _ {
      * @see _.forEach
      */
     forEach(
-      iteratee: ListIterator<string, any>,
-      thisArg?: any
+      iteratee: ListIterator<string, any>
     ): LoDashExplicitWrapper<string>;
   }
 
@@ -7385,8 +7364,7 @@ declare namespace _ {
      * @see _.forEach
      */
     forEach(
-      iteratee: ListIterator<T, any>,
-      thisArg?: any
+      iteratee: ListIterator<T, any>
     ): LoDashExplicitArrayWrapper<T>;
   }
 
@@ -7395,8 +7373,7 @@ declare namespace _ {
      * @see _.forEach
      */
     forEach<TValue>(
-      iteratee?: ListIterator<TValue, any> | DictionaryIterator<TValue, any>,
-      thisArg?: any
+      iteratee?: ListIterator<TValue, any> | DictionaryIterator<TValue, any>
     ): LoDashExplicitObjectWrapper<T>;
   }
 
@@ -8527,8 +8504,7 @@ declare namespace _ {
     reduce<T, TResult>(
       collection: Array<T>,
       callback: MemoIterator<T, TResult>,
-      accumulator: TResult,
-      thisArg?: any): TResult;
+      accumulator: TResult): TResult;
 
     /**
      * @see _.reduce
@@ -8536,8 +8512,7 @@ declare namespace _ {
     reduce<T, TResult>(
       collection: List<T>,
       callback: MemoIterator<T, TResult>,
-      accumulator: TResult,
-      thisArg?: any): TResult;
+      accumulator: TResult): TResult;
 
     /**
      * @see _.reduce
@@ -8545,8 +8520,7 @@ declare namespace _ {
     reduce<T, TResult>(
       collection: Dictionary<T>,
       callback: MemoIterator<T, TResult>,
-      accumulator: TResult,
-      thisArg?: any): TResult;
+      accumulator: TResult): TResult;
 
     /**
      * @see _.reduce
@@ -8554,40 +8528,35 @@ declare namespace _ {
     reduce<T, TResult>(
       collection: NumericDictionary<T>,
       callback: MemoIterator<T, TResult>,
-      accumulator: TResult,
-      thisArg?: any): TResult;
+      accumulator: TResult): TResult;
 
     /**
      * @see _.reduce
      */
     reduce<T, TResult>(
       collection: Array<T>,
-      callback: MemoIterator<T, TResult>,
-      thisArg?: any): TResult;
+      callback: MemoIterator<T, TResult>): TResult;
 
     /**
      * @see _.reduce
      */
     reduce<T, TResult>(
       collection: List<T>,
-      callback: MemoIterator<T, TResult>,
-      thisArg?: any): TResult;
+      callback: MemoIterator<T, TResult>): TResult;
 
     /**
      * @see _.reduce
      */
     reduce<T, TResult>(
       collection: Dictionary<T>,
-      callback: MemoIterator<T, TResult>,
-      thisArg?: any): TResult;
+      callback: MemoIterator<T, TResult>): TResult;
 
     /**
      * @see _.reduce
      */
     reduce<T, TResult>(
       collection: NumericDictionary<T>,
-      callback: MemoIterator<T, TResult>,
-      thisArg?: any): TResult;
+      callback: MemoIterator<T, TResult>): TResult;
 
   }
 
@@ -8597,15 +8566,13 @@ declare namespace _ {
      */
     reduce<TResult>(
       callback: MemoIterator<T, TResult>,
-      accumulator: TResult,
-      thisArg?: any): TResult;
+      accumulator: TResult): TResult;
 
     /**
      * @see _.reduce
      */
     reduce<TResult>(
-      callback: MemoIterator<T, TResult>,
-      thisArg?: any): TResult;
+      callback: MemoIterator<T, TResult>): TResult;
   }
 
   interface LoDashImplicitObjectWrapper<T> {
@@ -8614,15 +8581,13 @@ declare namespace _ {
      */
     reduce<TValue, TResult>(
       callback: MemoIterator<TValue, TResult>,
-      accumulator: TResult,
-      thisArg?: any): TResult;
+      accumulator: TResult): TResult;
 
     /**
      * @see _.reduce
      */
     reduce<TValue, TResult>(
-      callback: MemoIterator<TValue, TResult>,
-      thisArg?: any): TResult;
+      callback: MemoIterator<TValue, TResult>): TResult;
   }
 
   // _.reduceRight
@@ -8633,14 +8598,12 @@ declare namespace _ {
      * @param collection The collection to iterate over.
      * @param callback The function called per iteration.
      * @param accumulator Initial value of the accumulator.
-     * @param thisArg The this binding of callback.
      * @return The accumulated value.
      */
     reduceRight<T, TResult>(
       collection: Array<T>,
       callback: MemoIterator<T, TResult>,
-      accumulator: TResult,
-      thisArg?: any): TResult;
+      accumulator: TResult): TResult;
 
     /**
      * @see _.reduceRight
@@ -8648,8 +8611,7 @@ declare namespace _ {
     reduceRight<T, TResult>(
       collection: List<T>,
       callback: MemoIterator<T, TResult>,
-      accumulator: TResult,
-      thisArg?: any): TResult;
+      accumulator: TResult): TResult;
 
     /**
      * @see _.reduceRight
@@ -8657,32 +8619,28 @@ declare namespace _ {
     reduceRight<T, TResult>(
       collection: Dictionary<T>,
       callback: MemoIterator<T, TResult>,
-      accumulator: TResult,
-      thisArg?: any): TResult;
+      accumulator: TResult): TResult;
 
     /**
      * @see _.reduceRight
      */
     reduceRight<T, TResult>(
       collection: Array<T>,
-      callback: MemoIterator<T, TResult>,
-      thisArg?: any): TResult;
+      callback: MemoIterator<T, TResult>): TResult;
 
     /**
      * @see _.reduceRight
      */
     reduceRight<T, TResult>(
       collection: List<T>,
-      callback: MemoIterator<T, TResult>,
-      thisArg?: any): TResult;
+      callback: MemoIterator<T, TResult>): TResult;
 
     /**
      * @see _.reduceRight
      */
     reduceRight<T, TResult>(
       collection: Dictionary<T>,
-      callback: MemoIterator<T, TResult>,
-      thisArg?: any): TResult;
+      callback: MemoIterator<T, TResult>): TResult;
   }
 
   // _.reject
@@ -14931,14 +14889,12 @@ declare namespace _ {
      * iteration early by explicitly returning false.
      *
      * @param object The object to iterate over.
-     * @param iteratee The function invoked per iteration.
-     * @param thisArg The this binding of iteratee.
+     * @param iteratee The function invoked per iteration
      * @return Returns object.
      */
     forOwn<T>(
       object: Dictionary<T>,
-      iteratee?: DictionaryIterator<T, any>,
-      thisArg?: any
+      iteratee?: DictionaryIterator<T, any>
     ): Dictionary<T>;
 
     /**
@@ -14946,8 +14902,7 @@ declare namespace _ {
      */
     forOwn<T extends {}>(
       object: T,
-      iteratee?: ObjectIterator<any, any>,
-      thisArg?: any
+      iteratee?: ObjectIterator<any, any>
     ): T;
   }
 
@@ -14956,8 +14911,7 @@ declare namespace _ {
      * @see _.forOwn
      */
     forOwn<TValue>(
-      iteratee?: DictionaryIterator<TValue, any>,
-      thisArg?: any
+      iteratee?: DictionaryIterator<TValue, any>
     ): _.LoDashImplicitObjectWrapper<T>;
   }
 
@@ -14966,8 +14920,7 @@ declare namespace _ {
      * @see _.forOwn
      */
     forOwn<TValue>(
-      iteratee?: DictionaryIterator<TValue, any>,
-      thisArg?: any
+      iteratee?: DictionaryIterator<TValue, any>
     ): _.LoDashExplicitObjectWrapper<T>;
   }
 
