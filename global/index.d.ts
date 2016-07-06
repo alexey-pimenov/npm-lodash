@@ -8505,8 +8505,7 @@ declare namespace _ {
     reduce<T, TResult>(
       collection: Array<T>,
       callback: MemoIterator<T, TResult>,
-      accumulator: TResult,
-      thisArg?: any): TResult;
+      accumulator: TResult): TResult;
 
     /**
      * @see _.reduce
@@ -8514,8 +8513,7 @@ declare namespace _ {
     reduce<T, TResult>(
       collection: List<T>,
       callback: MemoIterator<T, TResult>,
-      accumulator: TResult,
-      thisArg?: any): TResult;
+      accumulator: TResult): TResult;
 
     /**
      * @see _.reduce
@@ -8523,8 +8521,7 @@ declare namespace _ {
     reduce<T, TResult>(
       collection: Dictionary<T>,
       callback: MemoIterator<T, TResult>,
-      accumulator: TResult,
-      thisArg?: any): TResult;
+      accumulator: TResult): TResult;
 
     /**
      * @see _.reduce
@@ -8532,40 +8529,35 @@ declare namespace _ {
     reduce<T, TResult>(
       collection: NumericDictionary<T>,
       callback: MemoIterator<T, TResult>,
-      accumulator: TResult,
-      thisArg?: any): TResult;
+      accumulator: TResult): TResult;
 
     /**
      * @see _.reduce
      */
     reduce<T, TResult>(
       collection: Array<T>,
-      callback: MemoIterator<T, TResult>,
-      thisArg?: any): TResult;
+      callback: MemoIterator<T, TResult>): TResult;
 
     /**
      * @see _.reduce
      */
     reduce<T, TResult>(
       collection: List<T>,
-      callback: MemoIterator<T, TResult>,
-      thisArg?: any): TResult;
+      callback: MemoIterator<T, TResult>): TResult;
 
     /**
      * @see _.reduce
      */
     reduce<T, TResult>(
       collection: Dictionary<T>,
-      callback: MemoIterator<T, TResult>,
-      thisArg?: any): TResult;
+      callback: MemoIterator<T, TResult>): TResult;
 
     /**
      * @see _.reduce
      */
     reduce<T, TResult>(
       collection: NumericDictionary<T>,
-      callback: MemoIterator<T, TResult>,
-      thisArg?: any): TResult;
+      callback: MemoIterator<T, TResult>): TResult;
 
   }
 
@@ -8575,15 +8567,13 @@ declare namespace _ {
      */
     reduce<TResult>(
       callback: MemoIterator<T, TResult>,
-      accumulator: TResult,
-      thisArg?: any): TResult;
+      accumulator: TResult): TResult;
 
     /**
      * @see _.reduce
      */
     reduce<TResult>(
-      callback: MemoIterator<T, TResult>,
-      thisArg?: any): TResult;
+      callback: MemoIterator<T, TResult>): TResult;
   }
 
   interface LoDashImplicitObjectWrapper<T> {
@@ -8592,15 +8582,13 @@ declare namespace _ {
      */
     reduce<TValue, TResult>(
       callback: MemoIterator<TValue, TResult>,
-      accumulator: TResult,
-      thisArg?: any): TResult;
+      accumulator: TResult): TResult;
 
     /**
      * @see _.reduce
      */
     reduce<TValue, TResult>(
-      callback: MemoIterator<TValue, TResult>,
-      thisArg?: any): TResult;
+      callback: MemoIterator<TValue, TResult>): TResult;
   }
 
   // _.reduceRight
@@ -8611,14 +8599,12 @@ declare namespace _ {
      * @param collection The collection to iterate over.
      * @param callback The function called per iteration.
      * @param accumulator Initial value of the accumulator.
-     * @param thisArg The this binding of callback.
      * @return The accumulated value.
      */
     reduceRight<T, TResult>(
       collection: Array<T>,
       callback: MemoIterator<T, TResult>,
-      accumulator: TResult,
-      thisArg?: any): TResult;
+      accumulator: TResult): TResult;
 
     /**
      * @see _.reduceRight
@@ -8626,8 +8612,7 @@ declare namespace _ {
     reduceRight<T, TResult>(
       collection: List<T>,
       callback: MemoIterator<T, TResult>,
-      accumulator: TResult,
-      thisArg?: any): TResult;
+      accumulator: TResult): TResult;
 
     /**
      * @see _.reduceRight
@@ -8635,32 +8620,28 @@ declare namespace _ {
     reduceRight<T, TResult>(
       collection: Dictionary<T>,
       callback: MemoIterator<T, TResult>,
-      accumulator: TResult,
-      thisArg?: any): TResult;
+      accumulator: TResult): TResult;
 
     /**
      * @see _.reduceRight
      */
     reduceRight<T, TResult>(
       collection: Array<T>,
-      callback: MemoIterator<T, TResult>,
-      thisArg?: any): TResult;
+      callback: MemoIterator<T, TResult>): TResult;
 
     /**
      * @see _.reduceRight
      */
     reduceRight<T, TResult>(
       collection: List<T>,
-      callback: MemoIterator<T, TResult>,
-      thisArg?: any): TResult;
+      callback: MemoIterator<T, TResult>): TResult;
 
     /**
      * @see _.reduceRight
      */
     reduceRight<T, TResult>(
       collection: Dictionary<T>,
-      callback: MemoIterator<T, TResult>,
-      thisArg?: any): TResult;
+      callback: MemoIterator<T, TResult>): TResult;
   }
 
   // _.reject
