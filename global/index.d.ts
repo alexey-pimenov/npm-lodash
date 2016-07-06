@@ -6553,8 +6553,7 @@ declare namespace _ {
      */
     each<T>(
       collection: T[],
-      iteratee?: ListIterator<T, any>,
-      thisArg?: any
+      iteratee?: ListIterator<T, any>
     ): T[];
 
     /**
@@ -6562,8 +6561,7 @@ declare namespace _ {
      */
     each<T>(
       collection: List<T>,
-      iteratee?: ListIterator<T, any>,
-      thisArg?: any
+      iteratee?: ListIterator<T, any>
     ): List<T>;
 
     /**
@@ -6571,8 +6569,7 @@ declare namespace _ {
      */
     each<T>(
       collection: Dictionary<T>,
-      iteratee?: DictionaryIterator<T, any>,
-      thisArg?: any
+      iteratee?: DictionaryIterator<T, any>
     ): Dictionary<T>;
 
     /**
@@ -6580,8 +6577,7 @@ declare namespace _ {
      */
     each<T extends {}>(
       collection: T,
-      iteratee?: ObjectIterator<any, any>,
-      thisArgs?: any
+      iteratee?: ObjectIterator<any, any>
     ): T;
 
     /**
@@ -6589,8 +6585,7 @@ declare namespace _ {
      */
     each<T extends {}, TValue>(
       collection: T,
-      iteratee?: ObjectIterator<TValue, any>,
-      thisArgs?: any
+      iteratee?: ObjectIterator<TValue, any>
     ): T;
   }
 
@@ -6599,8 +6594,7 @@ declare namespace _ {
      * @see _.forEach
      */
     each(
-      iteratee: ListIterator<string, any>,
-      thisArg?: any
+      iteratee: ListIterator<string, any>
     ): LoDashImplicitWrapper<string>;
   }
 
@@ -6609,8 +6603,7 @@ declare namespace _ {
      * @see _.forEach
      */
     each(
-      iteratee: ListIterator<T, any>,
-      thisArg?: any
+      iteratee: ListIterator<T, any>
     ): LoDashImplicitArrayWrapper<T>;
   }
 
@@ -6619,8 +6612,7 @@ declare namespace _ {
      * @see _.forEach
      */
     each<TValue>(
-      iteratee?: ListIterator<TValue, any> | DictionaryIterator<TValue, any>,
-      thisArg?: any
+      iteratee?: ListIterator<TValue, any> | DictionaryIterator<TValue, any>
     ): LoDashImplicitObjectWrapper<T>;
   }
 
@@ -6629,8 +6621,7 @@ declare namespace _ {
      * @see _.forEach
      */
     each(
-      iteratee: ListIterator<string, any>,
-      thisArg?: any
+      iteratee: ListIterator<string, any>
     ): LoDashExplicitWrapper<string>;
   }
 
@@ -6639,8 +6630,7 @@ declare namespace _ {
      * @see _.forEach
      */
     each(
-      iteratee: ListIterator<T, any>,
-      thisArg?: any
+      iteratee: ListIterator<T, any>
     ): LoDashExplicitArrayWrapper<T>;
   }
 
@@ -6649,8 +6639,7 @@ declare namespace _ {
      * @see _.forEach
      */
     each<TValue>(
-      iteratee?: ListIterator<TValue, any> | DictionaryIterator<TValue, any>,
-      thisArg?: any
+      iteratee?: ListIterator<TValue, any> | DictionaryIterator<TValue, any>
     ): LoDashExplicitObjectWrapper<T>;
   }
 
@@ -7295,12 +7284,11 @@ declare namespace _ {
      *
      * @param collection The collection to iterate over.
      * @param iteratee The function invoked per iteration.
-     * @param thisArg The this binding of iteratee.
+     *
      */
     forEach<T>(
       collection: T[],
-      iteratee?: ListIterator<T, any>,
-      thisArg?: any
+      iteratee?: ListIterator<T, any>
     ): T[];
 
     /**
@@ -7308,8 +7296,7 @@ declare namespace _ {
      */
     forEach<T>(
       collection: List<T>,
-      iteratee?: ListIterator<T, any>,
-      thisArg?: any
+      iteratee?: ListIterator<T, any>
     ): List<T>;
 
     /**
@@ -7317,8 +7304,7 @@ declare namespace _ {
      */
     forEach<T>(
       collection: Dictionary<T>,
-      iteratee?: DictionaryIterator<T, any>,
-      thisArg?: any
+      iteratee?: DictionaryIterator<T, any>
     ): Dictionary<T>;
 
     /**
@@ -7326,8 +7312,7 @@ declare namespace _ {
      */
     forEach<T extends {}>(
       collection: T,
-      iteratee?: ObjectIterator<any, any>,
-      thisArgs?: any
+      iteratee?: ObjectIterator<any, any>
     ): T;
 
     /**
@@ -7335,8 +7320,7 @@ declare namespace _ {
      */
     forEach<T extends {}, TValue>(
       collection: T,
-      iteratee?: ObjectIterator<TValue, any>,
-      thisArgs?: any
+      iteratee?: ObjectIterator<TValue, any>
     ): T;
   }
 
@@ -7345,8 +7329,7 @@ declare namespace _ {
      * @see _.forEach
      */
     forEach(
-      iteratee: ListIterator<string, any>,
-      thisArg?: any
+      iteratee: ListIterator<string, any>
     ): LoDashImplicitWrapper<string>;
   }
 
@@ -7355,8 +7338,7 @@ declare namespace _ {
      * @see _.forEach
      */
     forEach(
-      iteratee: ListIterator<T, any>,
-      thisArg?: any
+      iteratee: ListIterator<T, any>
     ): LoDashImplicitArrayWrapper<T>;
   }
 
@@ -7365,8 +7347,7 @@ declare namespace _ {
      * @see _.forEach
      */
     forEach<TValue>(
-      iteratee?: ListIterator<TValue, any> | DictionaryIterator<TValue, any>,
-      thisArg?: any
+      iteratee?: ListIterator<TValue, any> | DictionaryIterator<TValue, any>
     ): LoDashImplicitObjectWrapper<T>;
   }
 
@@ -7375,8 +7356,7 @@ declare namespace _ {
      * @see _.forEach
      */
     forEach(
-      iteratee: ListIterator<string, any>,
-      thisArg?: any
+      iteratee: ListIterator<string, any>
     ): LoDashExplicitWrapper<string>;
   }
 
@@ -7385,8 +7365,7 @@ declare namespace _ {
      * @see _.forEach
      */
     forEach(
-      iteratee: ListIterator<T, any>,
-      thisArg?: any
+      iteratee: ListIterator<T, any>
     ): LoDashExplicitArrayWrapper<T>;
   }
 
@@ -7395,8 +7374,7 @@ declare namespace _ {
      * @see _.forEach
      */
     forEach<TValue>(
-      iteratee?: ListIterator<TValue, any> | DictionaryIterator<TValue, any>,
-      thisArg?: any
+      iteratee?: ListIterator<TValue, any> | DictionaryIterator<TValue, any>
     ): LoDashExplicitObjectWrapper<T>;
   }
 
@@ -14923,14 +14901,12 @@ declare namespace _ {
      * iteration early by explicitly returning false.
      *
      * @param object The object to iterate over.
-     * @param iteratee The function invoked per iteration.
-     * @param thisArg The this binding of iteratee.
+     * @param iteratee The function invoked per iteration
      * @return Returns object.
      */
     forOwn<T>(
       object: Dictionary<T>,
-      iteratee?: DictionaryIterator<T, any>,
-      thisArg?: any
+      iteratee?: DictionaryIterator<T, any>
     ): Dictionary<T>;
 
     /**
@@ -14938,8 +14914,7 @@ declare namespace _ {
      */
     forOwn<T extends {}>(
       object: T,
-      iteratee?: ObjectIterator<any, any>,
-      thisArg?: any
+      iteratee?: ObjectIterator<any, any>
     ): T;
   }
 
@@ -14948,8 +14923,7 @@ declare namespace _ {
      * @see _.forOwn
      */
     forOwn<TValue>(
-      iteratee?: DictionaryIterator<TValue, any>,
-      thisArg?: any
+      iteratee?: DictionaryIterator<TValue, any>
     ): _.LoDashImplicitObjectWrapper<T>;
   }
 
@@ -14958,8 +14932,7 @@ declare namespace _ {
      * @see _.forOwn
      */
     forOwn<TValue>(
-      iteratee?: DictionaryIterator<TValue, any>,
-      thisArg?: any
+      iteratee?: DictionaryIterator<TValue, any>
     ): _.LoDashExplicitObjectWrapper<T>;
   }
 
