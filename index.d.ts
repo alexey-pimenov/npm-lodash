@@ -1885,6 +1885,13 @@ declare namespace _ {
     first<TResult>(): TResult;
   }
 
+  interface LoDashExplicitArrayWrapper<T> {
+    /**
+     * @see _.head
+     */
+    first(): LoDashExplicitWrapper<T>;
+  }
+
   interface RecursiveArray<T> extends Array<T | RecursiveArray<T>> { }
   interface ListOfRecursiveArraysOrValues<T> extends List<T | RecursiveArray<T>> { }
 
@@ -2778,6 +2785,13 @@ declare namespace _ {
      * @see _.last
      */
     last<T>(): LoDashExplicitObjectWrapper<T>;
+  }
+
+  interface LoDashExplicitArrayWrapper<T> {
+    /**
+     * @see _.head
+     */
+    last(): LoDashExplicitWrapper<T>;
   }
 
   // _.lastIndexOf
@@ -10997,14 +11011,14 @@ declare namespace _ {
      */
     cloneWith<T>(
       value: T,
-      customizer: (value: any) => any): T;
+      customizer: (value: any, key?: any, object?: T, stack?: {}) => any): T;
   }
 
   interface LoDashImplicitWrapper<T> {
     /**
      * @see _.clone
      */
-    cloneWith(customizer: (value: any) => any): T;
+    cloneWith(customizer: (value: any, key?: any, object?: T, stack?: {}) => any): T;
   }
 
   interface LoDashImplicitArrayWrapper<T> {
@@ -11012,14 +11026,14 @@ declare namespace _ {
     /**
      * @see _.clone
      */
-    cloneWith(customizer: (value: any) => any): T[];
+    cloneWith(customizer: (value: any, key?: any, object?: T, stack?: {}) => any): T[];
   }
 
   interface LoDashImplicitObjectWrapper<T> {
     /**
      * @see _.clone
      */
-    cloneWith(customizer: (value: any) => any): T;
+    cloneWith(customizer: (value: any, key?: any, object?: T, stack?: {}) => any): T;
   }
 
   // _.cloneDeepWith
@@ -11038,28 +11052,28 @@ declare namespace _ {
      */
     cloneDeepWith<T>(
       value: T,
-      customizer: (value: any) => any): T;
+      customizer: (value: any, key?: any, object?: T, stack?: {}) => any): T;
   }
 
   interface LoDashImplicitWrapper<T> {
     /**
      * @see _.cloneDeep
      */
-    cloneDeepWith(customizer: (value: any) => any): T;
+    cloneDeepWith(customizer: (value: any, key?: any, object?: T, stack?: {}) => any): T;
   }
 
   interface LoDashImplicitArrayWrapper<T> {
     /**
      * @see _.cloneDeep
      */
-    cloneDeepWith(customizer: (value: any) => any): T[];
+    cloneDeepWith(customizer: (value: any, key?: any, object?: T, stack?: {}) => any): T[];
   }
 
   interface LoDashImplicitObjectWrapper<T> {
     /**
      * @see _.cloneDeep
      */
-    cloneDeepWith(customizer: (value: any) => any): T;
+    cloneDeepWith(customizer: (value: any, key?: any, object?: T, stack?: {}) => any): T;
   }
 
   // _.eq
